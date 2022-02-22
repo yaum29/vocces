@@ -1,0 +1,22 @@
+<script>
+
+// Queremos mostrar un primer mensaje que diga "hola" y un segundo que diga "adios".
+let showText = function(){
+    return {
+        text: 'Adios',
+        init: function(){
+            return alert( this.text );
+        }
+    }
+}();
+
+
+showText.text = 'Hola';
+showText2 = showText;
+showText2.text = 'Adios' ;
+
+
+showText.init();
+showText2.init();
+
+</script>
