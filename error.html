@@ -1,4 +1,3 @@
-<script>
 
 // Queremos mostrar un primer mensaje que diga "hola" y un segundo que diga "adios".
 let showText = function(){
@@ -10,11 +9,9 @@ let showText = function(){
     }
 }();
 
-
+let showText2 = Object.assign({}, showText);
+showText2.text = 'Adios';
 showText.text = 'Hola';
-showText2 = showText;
-showText2.text = 'Adios' ;
-
 
 showText.init();
 showText2.init();
